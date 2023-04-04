@@ -1,0 +1,68 @@
+Ex1 :
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner m = new Scanner(System.in);
+        System.out.println("Enter number :");
+        int number = m.nextInt();
+       if(number>0) {
+           System.out.println("the number is positive");
+       } else if (number<0) {
+           System.out.println("the number is negative");
+       }else {
+           System.out.println("the number equals 0");
+       }
+    }
+}
+
+Ex2 :
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner m = new Scanner(System.in);
+        System.out.println("Enter your word :");
+        String name = m.nextLine();
+        System.out.println("Enter the index number :");
+        int index = m.nextInt();
+        System.out.println(name.charAt(index));
+    }
+}
+
+Ex3 :
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner m = new Scanner(System.in);
+        System.out.println("Enter your word :");
+        String name = m.nextLine();
+        System.out.println("Enter the character you want to check :");
+        String latter = m.nextLine();
+        System.out.println(name.contains(latter));
+        }
+    }
+    
+Ex4 :
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner m = new Scanner(System.in);
+        System.out.println("Enter first number :");
+        int num1 = m.nextInt();
+        System.out.println("Enter second number :");
+        int num2 = m.nextInt();
+        System.out.println("Enter third number :");
+        int num3 = m.nextInt();
+        if(num1>num2&&num1>num3) {
+            System.out.println("the big number : " +num1);
+        } else if(num2>num1&&num2>num3) {
+            System.out.println("the big number : " +num2);
+        } else if(num3>num1&&num3>num2){
+            System.out.println("the big number : " +num3);}
+    }
+}
